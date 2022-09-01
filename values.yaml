@@ -1,0 +1,14 @@
+jupyterhub:
+  singleuser:
+    storage:
+      type: none
+  rbac:
+    enabled: false
+  prePuller:
+    hook:
+      enabled: false
+    continuous:
+      enabled: false
+  proxy:
+    service:
+      type: ClusterIP
