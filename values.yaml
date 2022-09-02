@@ -2,6 +2,8 @@ jupyterhub:
   singleuser:
     storage:
       type: none
+    cloudMetadata:
+      blockWithIptables: false
   rbac:
     enabled: false
   prePuller:
@@ -12,3 +14,10 @@ jupyterhub:
   proxy:
     service:
       type: ClusterIP
+  scheduling:
+    userScheduler:
+      enabled: false
+    corePods:
+      tolerations: []
+    userPods:
+      tolerations: []
